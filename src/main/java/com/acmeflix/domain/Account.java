@@ -4,12 +4,11 @@ import lombok.experimental.SuperBuilder;
 import java.util.List;
 @Data
 @SuperBuilder
-public class Account {
+public class Account extends BaseModel{
     private String username;
     private String password;
     private String email;
-    private String subscriptionPlan;
-    private String fullName;
-    private List<Profile> profiles;
     private String phone;
+    private String subscriptionPlan;
+    private List<Profile> profiles;
 }
