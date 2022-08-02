@@ -1,4 +1,6 @@
 package com.acmeflix.repository;
 
-public class AccountRepository {
+import com.acmeflix.domain.Account;
+
+public interface AccountRepository extends BaseRepository<Account, Long> {
 }
