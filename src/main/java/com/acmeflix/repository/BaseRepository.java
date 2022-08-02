@@ -1,6 +1,5 @@
 package com.acmeflix.repository;
 
-import com.acmeflix.base.BaseComponent;
 import com.acmeflix.domain.BaseModel;
 
 import java.util.List;
