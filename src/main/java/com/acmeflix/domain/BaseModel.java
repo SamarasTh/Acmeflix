@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Data
 @SuperBuilder
-public class BaseModel implements Serializable {
+public abstract class BaseModel implements Serializable {
     // Indicates that an annotated field or method is part of the serialization mechanism defined by the Java Object Serialization Specification.
     @Serial
     public static final Long serialVersionUID = 1L;

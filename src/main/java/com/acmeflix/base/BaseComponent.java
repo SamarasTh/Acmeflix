@@ -7,15 +7,17 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public abstract class BaseComponent {
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    protected Logger logger = LoggerFactory.getLogger(getClass());
 
     @PostConstruct
-    public void init() {logger.trace("Loaded {}.", getClass());}
+    public void init() {
+        logger.trace("Loaded {}.", getClass());
+    }
 
     @PreDestroy
-    public void destroy(){logger.trace("{} is about to be destroyed.", getClass().getName());}
-
-
+    public void destroy() {
+        logger.trace("{} is about to be destroyed.", getClass().getName());
+    }
 
 
 }

@@ -1,9 +1,11 @@
 package com.acmeflix.repository;
 
 import com.acmeflix.domain.Movie;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface MovieRepository extends BaseRepository<Movie, Long>{
+@Repository
+public interface MovieRepository extends BaseRepository<Movie, Long> {
     List<Movie> findByTitle(String title);
 }

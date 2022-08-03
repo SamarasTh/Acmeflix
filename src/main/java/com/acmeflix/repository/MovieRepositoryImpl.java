@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class MovieRepositoryImpl implements MovieRepository{
+public class MovieRepositoryImpl extends BaseRepositoryImpl<Movie> implements MovieRepository {
     @Override
     public List<Movie> findByTitle(String title) {
         return null;

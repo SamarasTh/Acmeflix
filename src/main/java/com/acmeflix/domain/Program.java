@@ -10,7 +10,7 @@ import java.util.List;
 public class Program extends BaseModel {
     private String title;
     private String year;
-    private List<Genre> genres;
+    private List<Category> categories;
     List<Program> programRecommendations;
     private List<Language> languages;
     private List<Language> subtitles;

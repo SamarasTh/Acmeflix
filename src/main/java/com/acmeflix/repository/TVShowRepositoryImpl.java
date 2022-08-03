@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class TVShowRepositoryImpl implements TVShowRepository{
+public class TVShowRepositoryImpl extends BaseRepositoryImpl<TVShow> implements TVShowRepository {
     @Override
     public TVShow create(TVShow entity) {
         return null;
