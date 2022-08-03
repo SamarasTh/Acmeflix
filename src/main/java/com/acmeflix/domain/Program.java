@@ -7,11 +7,11 @@ import java.util.List;
 
 @Data
 @SuperBuilder
-public class ContentCatalog extends BaseModel {
+public class Program extends BaseModel {
     private String title;
     private String year;
     private List<Genre> genres;
-    List<ContentCatalog> contentCatalogRecommendations;
+    List<Program> programRecommendations;
     private List<Language> languages;
     private List<Language> subtitles;
 

@@ -5,6 +5,6 @@ import lombok.experimental.SuperBuilder;
 
 @Data
 @SuperBuilder
-public class Movie extends ContentCatalog {
+public class Movie extends Program {
     private int duration;
 }
