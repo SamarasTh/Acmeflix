@@ -8,7 +8,12 @@ import java.util.List;
 @Component
 public class MovieRepositoryImpl extends BaseRepositoryImpl<Movie> implements MovieRepository {
     @Override
-    public List<Movie> findByTitle(String title) {
+    public Movie findByTitle(String title) {
+        return null;
+    }
+
+    @Override
+    public Movie findByYear(String year) {
         return null;
     }
 
