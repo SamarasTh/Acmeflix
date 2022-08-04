@@ -66,7 +66,7 @@ public abstract class BaseServiceImpl<T extends BaseModel> extends BaseComponent
 
     @Override
     public T get(Long id) {
-        logger.trace("Retrieving item with id {}.", id);
+        logger.trace("Retrieving Entity with id {}.", id);
         T entity = getRepository().get(id);
         return entity;
     }

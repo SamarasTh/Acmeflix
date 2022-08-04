@@ -17,13 +17,13 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
     }
 
     @Override
-    public Movie findByYear(String year) {
+    public Movie findByYear(final String year) {
         Movie movie = movieRepository.findByYear(year);
         return movie;
     }
 
     @Override
-    public Movie findByTitle(String title) {
+    public Movie findByTitle(final String title) {
         Movie movie = movieRepository.findByTitle(title);
         return movie;
     }

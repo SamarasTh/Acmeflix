@@ -8,7 +8,7 @@ public interface AccountService {
 
     void resetPassword(Account account, String password);
 
-    void createProfile(Account account, Profile... profiles);
+    void createProfiles(Account account, Profile... profiles);
 
-    void changeSubscriptionPlan(Account account, SubscriptionPlan subscriptionPlan);
+    void addSubscriptionPlan(Account account, SubscriptionPlan subscriptionPlan);
 }

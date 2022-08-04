@@ -26,6 +26,6 @@ public class RatingServiceImpl extends BaseServiceImpl<Rating> implements Rating
 
     @Override
     public Rating getRating(final Program program) {
-        return null;
+        return ratingRepository.getRating(program);
     }
 }

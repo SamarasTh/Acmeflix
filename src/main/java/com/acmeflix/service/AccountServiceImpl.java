@@ -30,14 +30,14 @@ public class AccountServiceImpl extends BaseServiceImpl<Account> implements Acco
     }
 
     @Override
-    public void createProfile(final Account account, final Profile... profiles) {
+    public void createProfiles(final Account account, final Profile... profiles) {
         account.setProfiles(new ArrayList<>());
         Arrays.stream(profiles).forEach(profile -> account.getProfiles().add(profile));
     }
 
     @Override
-    public void changeSubscriptionPlan(Account account, SubscriptionPlan subscriptionPlan) {
-//      TODO  account.setSubscriptionPlan(new Subs);
+    public void addSubscriptionPlan(Account account, SubscriptionPlan subscriptionPlan) {
+        account.setSubscriptionPlan(subscriptionPlan.name());
     }
 
 
