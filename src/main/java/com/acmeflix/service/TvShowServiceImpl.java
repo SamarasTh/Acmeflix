@@ -1,5 +1,6 @@
 package com.acmeflix.service;
 
+import com.acmeflix.domain.Episode;
 import com.acmeflix.domain.Season;
 import com.acmeflix.domain.TVShow;
 import com.acmeflix.repository.BaseRepository;
@@ -38,6 +39,12 @@ public class TvShowServiceImpl extends BaseServiceImpl<TVShow> implements TvShow
         tvShow.setSeasons(new ArrayList<>());
         Arrays.stream(seasons).forEach(season -> tvShow.getSeasons().add(season));
 
+    }
+
+    @Override
+    public void addEpisodes(final Season season, Episode... episodes) {
+        season.setEpisodes(new ArrayList<>());
+        Arrays.stream(episodes).forEach(episode -> season.getEpisodes().add(episode));
     }
 
 
