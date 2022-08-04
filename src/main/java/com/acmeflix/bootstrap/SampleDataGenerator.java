@@ -20,6 +20,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
     private final MovieService movieService;
     private final TvShowService tvShowService;
     private final RatingService ratingService;
+
     @Override
     public void run(String... args) throws Exception {
 //create dummy accounts
@@ -104,7 +105,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("2022")
                 .categories(List.of(Category.ADVENTURE))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN,Language.GREEK))
+                .subtitles(List.of(Language.GERMAN, Language.GREEK))
                 .build();
 
         Movie movie2 = Movie.builder()
@@ -113,7 +114,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("1972")
                 .categories(List.of(Category.DRAMA))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN,Language.FRENCH,Language.SPANISH))
+                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.SPANISH))
                 .build();
 
         Movie movie3 = Movie.builder()
@@ -122,7 +123,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("2008")
                 .categories(List.of(Category.ACTION, Category.ADVENTURE, Category.DRAMA))
                 .languages(List.of(Language.ENGLISH, Language.FRENCH))
-                .subtitles(List.of(Language.GERMAN,Language.FRENCH,Language.GREEK))
+                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
                 .build();
 
         Movie movie4 = Movie.builder()
@@ -131,7 +132,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("1974")
                 .categories(List.of(Category.DRAMA))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN,Language.FRENCH,Language.SPANISH))
+                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.SPANISH))
                 .build();
 
         movie4.setProgramRecommendations(List.of(movie2));
@@ -142,58 +143,58 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .title("Breaking Bad")
                 .year("2008")
                 .seasons(List.of(Season.builder().id(1L).title("Season 1").build(),
-                                 Season.builder().id(2L).title("Season 2").build(),
-                                 Season.builder().id(3L).title("Season 3").build(),
-                                 Season.builder().id(4L).title("Season 4").build(),
-                                 Season.builder().id(5L).title("Season 5").build()))
+                        Season.builder().id(2L).title("Season 2").build(),
+                        Season.builder().id(3L).title("Season 3").build(),
+                        Season.builder().id(4L).title("Season 4").build(),
+                        Season.builder().id(5L).title("Season 5").build()))
                 .languages(List.of(Language.ENGLISH, Language.SPANISH))
-                .subtitles(List.of(Language.GERMAN,Language.FRENCH,Language.GREEK))
+                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
                 .build();
 
-                tvShow1.getSeasons().get(0).setEpisodes(Arrays.asList(
-                        Episode.builder().id(1L).title("Episode 1").duration(50).build(),
-                        Episode.builder().id(2L).title("Episode 2").duration(52).build(),
-                        Episode.builder().id(3L).title("Episode 3").duration(48).build(),
-                        Episode.builder().id(4L).title("Episode 4").duration(51).build(),
-                        Episode.builder().id(5L).title("Episode 5").duration(49).build()));
+        tvShow1.getSeasons().get(0).setEpisodes(Arrays.asList(
+                Episode.builder().id(1L).title("Episode 1").duration(50).build(),
+                Episode.builder().id(2L).title("Episode 2").duration(52).build(),
+                Episode.builder().id(3L).title("Episode 3").duration(48).build(),
+                Episode.builder().id(4L).title("Episode 4").duration(51).build(),
+                Episode.builder().id(5L).title("Episode 5").duration(49).build()));
 
-                tvShow1.getSeasons().get(1).setEpisodes(Arrays.asList(
-                        Episode.builder().id(6L).title("Episode 6").duration(50).build(),
-                        Episode.builder().id(7L).title("Episode 7").duration(52).build(),
-                        Episode.builder().id(8L).title("Episode 8").duration(48).build(),
-                        Episode.builder().id(9L).title("Episode 9").duration(51).build(),
-                        Episode.builder().id(10L).title("Episode 10").duration(49).build()));
+        tvShow1.getSeasons().get(1).setEpisodes(Arrays.asList(
+                Episode.builder().id(6L).title("Episode 6").duration(50).build(),
+                Episode.builder().id(7L).title("Episode 7").duration(52).build(),
+                Episode.builder().id(8L).title("Episode 8").duration(48).build(),
+                Episode.builder().id(9L).title("Episode 9").duration(51).build(),
+                Episode.builder().id(10L).title("Episode 10").duration(49).build()));
 
-                tvShow1.getSeasons().get(2).setEpisodes(Arrays.asList(
-                        Episode.builder().id(11L).title("Episode 11").duration(50).build(),
-                        Episode.builder().id(12L).title("Episode 12").duration(52).build(),
-                        Episode.builder().id(13L).title("Episode 13").duration(48).build(),
-                        Episode.builder().id(14L).title("Episode 14").duration(51).build(),
-                        Episode.builder().id(15L).title("Episode 15").duration(49).build()));
+        tvShow1.getSeasons().get(2).setEpisodes(Arrays.asList(
+                Episode.builder().id(11L).title("Episode 11").duration(50).build(),
+                Episode.builder().id(12L).title("Episode 12").duration(52).build(),
+                Episode.builder().id(13L).title("Episode 13").duration(48).build(),
+                Episode.builder().id(14L).title("Episode 14").duration(51).build(),
+                Episode.builder().id(15L).title("Episode 15").duration(49).build()));
 
-                tvShow1.getSeasons().get(3).setEpisodes(Arrays.asList(
-                        Episode.builder().id(16L).title("Episode 16").duration(50).build(),
-                        Episode.builder().id(17L).title("Episode 17").duration(52).build(),
-                        Episode.builder().id(18L).title("Episode 18").duration(48).build(),
-                        Episode.builder().id(19L).title("Episode 19").duration(51).build(),
-                        Episode.builder().id(20L).title("Episode 20").duration(49).build()));
+        tvShow1.getSeasons().get(3).setEpisodes(Arrays.asList(
+                Episode.builder().id(16L).title("Episode 16").duration(50).build(),
+                Episode.builder().id(17L).title("Episode 17").duration(52).build(),
+                Episode.builder().id(18L).title("Episode 18").duration(48).build(),
+                Episode.builder().id(19L).title("Episode 19").duration(51).build(),
+                Episode.builder().id(20L).title("Episode 20").duration(49).build()));
 
-                tvShow1.getSeasons().get(4).setEpisodes(Arrays.asList(
-                        Episode.builder().id(21L).title("Episode 21").duration(50).build(),
-                        Episode.builder().id(22L).title("Episode 22").duration(52).build(),
-                        Episode.builder().id(23L).title("Episode 23").duration(48).build(),
-                        Episode.builder().id(24L).title("Episode 24").duration(51).build(),
-                        Episode.builder().id(25L).title("Episode 25").duration(49).build()));
+        tvShow1.getSeasons().get(4).setEpisodes(Arrays.asList(
+                Episode.builder().id(21L).title("Episode 21").duration(50).build(),
+                Episode.builder().id(22L).title("Episode 22").duration(52).build(),
+                Episode.builder().id(23L).title("Episode 23").duration(48).build(),
+                Episode.builder().id(24L).title("Episode 24").duration(51).build(),
+                Episode.builder().id(25L).title("Episode 25").duration(49).build()));
 
-                accountService.createAll(account1, account2, account3);
-                movieService.createAll(movie1, movie2, movie3, movie4);
-                tvShowService.create(tvShow1);
+        accountService.createAll(account1, account2, account3);
+        movieService.createAll(movie1, movie2, movie3, movie4);
+        tvShowService.create(tvShow1);
 
         TVShow tvShow2 = TVShow.builder()
                 .title("Sherlock")
                 .year("2010")
                 .languages(List.of(Language.ENGLISH, Language.SPANISH))
-                .subtitles(List.of(Language.GERMAN,Language.FRENCH,Language.GREEK))
+                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
                 .build();
         tvShowService.create(tvShow2);
 
@@ -223,6 +224,6 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
         logger.info("Submit Statistics");
 
         Account account1Retrieve = accountService.get(1L);
-       // RatingService.rate(account1Retrieve.getProfiles().get(0), movieService.get(1L), 4d);
-}
+        ratingService.rate(movieService.get(1L), account1Retrieve.getProfiles().get(0), 4.2);
+    }
 }
