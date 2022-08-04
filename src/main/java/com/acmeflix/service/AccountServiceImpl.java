@@ -37,7 +37,7 @@ public class AccountServiceImpl extends BaseServiceImpl<Account> implements Acco
 
     @Override
     public void addSubscriptionPlan(Account account, SubscriptionPlan subscriptionPlan) {
-        account.setSubscriptionPlan(subscriptionPlan.name());
+        account.setSubscriptionPlan(subscriptionPlan);
     }
 
 
