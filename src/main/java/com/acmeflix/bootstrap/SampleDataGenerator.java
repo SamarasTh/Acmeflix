@@ -207,7 +207,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 Season.builder().id(4L).title("Season 4").build(),
                 Season.builder().id(5L).title("Season 5").build());
 
-        tvShowService.addEpisodes(tvShowRetrieve.getSeasons().get(6),
+        tvShowService.addEpisodes(tvShowRetrieve.getSeasons().get(3),
                 Episode.builder().id(1L).title("Episode 1").duration(50).build(),
                 Episode.builder().id(2L).title("Episode 2").duration(52).build(),
                 Episode.builder().id(3L).title("Episode 3").duration(48).build(),
@@ -225,5 +225,24 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
 
         Account account1Retrieve = accountService.get(1L);
         ratingService.rate(movieService.get(1L), account1Retrieve.getProfiles().get(0), 4.2);
+        ratingService.rate(movieService.get(2L), account1Retrieve.getProfiles().get(0), 4.1);
+        ratingService.rate(movieService.get(3L), account1Retrieve.getProfiles().get(0), 4.2);
+        ratingService.rate(tvShowService.get(1L), account1Retrieve.getProfiles().get(0), 4.9);
+        ratingService.rate(tvShowService.get(2L), account1Retrieve.getProfiles().get(0), 4.5);
+        ratingService.rate(tvShowService.get(3L), account1Retrieve.getProfiles().get(0), 4.4);
+
+        Account account2Retrieve = accountService.get(2L);
+        ratingService.rate(movieService.get(1L), account2Retrieve.getProfiles().get(0), 4.8);
+        ratingService.rate(movieService.get(2L), account2Retrieve.getProfiles().get(0), 4.2);
+        ratingService.rate(tvShowService.get(1L), account2Retrieve.getProfiles().get(0), 4.3);
+        ratingService.rate(tvShowService.get(2L), account2Retrieve.getProfiles().get(0), 4.4);
+
+        Account account3Retrieve = accountService.get(3L);
+        ratingService.rate(movieService.get(1L), account3Retrieve.getProfiles().get(0), 4.3);
+        ratingService.rate(movieService.get(2L), account3Retrieve.getProfiles().get(0), 4.2);
+        ratingService.rate(movieService.get(3L), account3Retrieve.getProfiles().get(0), 4.1);
+        ratingService.rate(tvShowService.get(1L), account3Retrieve.getProfiles().get(0), 4.8);
+        ratingService.rate(tvShowService.get(2L), account3Retrieve.getProfiles().get(0), 3.9);
+        ratingService.rate(tvShowService.get(3L), account3Retrieve.getProfiles().get(0), 4.1);
     }
 }
