@@ -12,6 +12,7 @@ public class TVShowRepositoryImpl extends BaseRepositoryImpl<TVShow> implements 
 
     private final AtomicLong id = new AtomicLong(1);
     private final Map<Long, TVShow> entity = new LinkedHashMap<>();
+
     @Override
     public TVShow findByTitle(String title) {
         return null;
@@ -23,13 +24,4 @@ public class TVShowRepositoryImpl extends BaseRepositoryImpl<TVShow> implements 
     }
 
 
-    @Override
-    public Map<Long, TVShow> getEntity() {
-        return entity;
-    }
-
-    @Override
-    public AtomicLong getID() {
-        return id;
-    }
 }

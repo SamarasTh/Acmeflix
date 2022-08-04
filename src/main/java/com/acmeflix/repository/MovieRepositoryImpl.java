@@ -1,11 +1,9 @@
 package com.acmeflix.repository;
 
 import com.acmeflix.domain.Movie;
-import com.acmeflix.domain.TVShow;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -24,13 +22,5 @@ public class MovieRepositoryImpl extends BaseRepositoryImpl<Movie> implements Mo
         return null;
     }
 
-    @Override
-    public Map<Long, Movie> getEntity() {
-        return entity;
-    }
 
-    @Override
-    public AtomicLong getID() {
-        return id;
-    }
 }

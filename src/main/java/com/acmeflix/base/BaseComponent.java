@@ -10,12 +10,12 @@ public abstract class BaseComponent {
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
     @PostConstruct
-    public void init() {
+    private void init() {
         logger.trace("Loaded {}.", getClass());
     }
 
     @PreDestroy
-    public void destroy() {
+    private void destroy() {
         logger.trace("{} is about to be destroyed.", getClass().getName());
     }
 

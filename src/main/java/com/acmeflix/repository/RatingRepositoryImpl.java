@@ -5,9 +5,7 @@ import com.acmeflix.domain.Rating;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Component
 public class RatingRepositoryImpl extends BaseRepositoryImpl<Rating> implements RatingRepository {
@@ -24,15 +22,6 @@ public class RatingRepositoryImpl extends BaseRepositoryImpl<Rating> implements 
         return null;
     }
 
-    @Override
-    public Map<Long, Rating> getEntity() {
-        return null;
-    }
-
-    @Override
-    public AtomicLong getID() {
-        return null;
-    }
 }
 
 
