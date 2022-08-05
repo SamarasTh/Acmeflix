@@ -105,7 +105,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("2022")
                 .categories(List.of(Category.ADVENTURE))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN, Language.GREEK))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.GREEK))
                 .build();
 
         Movie movie2 = Movie.builder()
@@ -114,7 +114,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("1972")
                 .categories(List.of(Category.DRAMA))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.SPANISH))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.FRENCH, Subtitle.SPANISH))
                 .build();
 
         Movie movie3 = Movie.builder()
@@ -123,7 +123,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("2008")
                 .categories(List.of(Category.ACTION, Category.ADVENTURE, Category.DRAMA))
                 .languages(List.of(Language.ENGLISH, Language.FRENCH))
-                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.FRENCH, Subtitle.GREEK))
                 .build();
 
         Movie movie4 = Movie.builder()
@@ -132,7 +132,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .year("1974")
                 .categories(List.of(Category.DRAMA))
                 .languages(List.of(Language.ENGLISH))
-                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.SPANISH))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.FRENCH, Subtitle.SPANISH))
                 .build();
 
         movie4.setProgramRecommendations(List.of(movie2));
@@ -148,7 +148,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                         Season.builder().id(4L).title("Season 4").build(),
                         Season.builder().id(5L).title("Season 5").build()))
                 .languages(List.of(Language.ENGLISH, Language.SPANISH))
-                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.FRENCH, Subtitle.GREEK))
                 .build();
 
         tvShow1.getSeasons().get(0).setEpisodes(Arrays.asList(
@@ -194,7 +194,7 @@ public class SampleDataGenerator extends BaseComponent implements CommandLineRun
                 .title("Sherlock")
                 .year("2010")
                 .languages(List.of(Language.ENGLISH, Language.SPANISH))
-                .subtitles(List.of(Language.GERMAN, Language.FRENCH, Language.GREEK))
+                .subtitles(List.of(Subtitle.GERMAN, Subtitle.FRENCH, Subtitle.GREEK))
                 .build();
         tvShowService.create(tvShow2);
 
