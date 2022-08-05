@@ -13,7 +13,7 @@ public class Program extends BaseModel {
     private List<Category> categories;
     List<Program> programRecommendations;
     private List<Language> languages;
-    private List<Language> subtitles;
+    private List<Subtitle> subtitles;
 
 
 }

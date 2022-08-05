@@ -10,8 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Repository
 public class TVShowRepositoryImpl extends BaseRepositoryImpl<TVShow> implements TVShowRepository {
 
-    private final AtomicLong id = new AtomicLong(1);
-    private final Map<Long, TVShow> entity = new LinkedHashMap<>();
+
 
     @Override
     public TVShow findByTitle(String title) {

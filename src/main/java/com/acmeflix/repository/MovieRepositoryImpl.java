@@ -9,8 +9,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
 public class MovieRepositoryImpl extends BaseRepositoryImpl<Movie> implements MovieRepository {
-    private final AtomicLong id = new AtomicLong(1);
-    private final Map<Long, Movie> entity = new LinkedHashMap<>();
+
 
     @Override
     public Movie findByTitle(final String title) {
