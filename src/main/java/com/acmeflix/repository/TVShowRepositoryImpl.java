@@ -1,13 +1,13 @@
 package com.acmeflix.repository;
 
 import com.acmeflix.domain.TVShow;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Component
+@Repository
 public class TVShowRepositoryImpl extends BaseRepositoryImpl<TVShow> implements TVShowRepository {
 
     private final AtomicLong id = new AtomicLong(1);

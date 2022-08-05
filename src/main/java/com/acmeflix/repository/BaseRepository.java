@@ -1,11 +1,10 @@
 package com.acmeflix.repository;
 
 import com.acmeflix.domain.BaseModel;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+
 public interface BaseRepository<T extends BaseModel, ID> {
 
     T create(final T entity);

@@ -2,9 +2,11 @@ package com.acmeflix.repository;
 
 import com.acmeflix.base.BaseComponent;
 import com.acmeflix.domain.BaseModel;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public abstract class BaseRepositoryImpl<T extends BaseModel> extends BaseComponent implements BaseRepository<T, Long> {
 
     @Override

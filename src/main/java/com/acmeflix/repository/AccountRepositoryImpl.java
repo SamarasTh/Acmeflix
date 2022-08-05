@@ -1,10 +1,10 @@
 package com.acmeflix.repository;
 
 import com.acmeflix.domain.Account;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 
-@Component
+@Repository
 public class AccountRepositoryImpl extends BaseRepositoryImpl<Account> implements AccountRepository {
 
 }
